@@ -1,5 +1,8 @@
+name: e-commerce-catalog
+
 services:
   catalog:
+    image: ghcr.io/aroh-francis/retail-store-catalog:${APP_VERSION:-2.0.0}
     build:
       context: .
     hostname: catalog

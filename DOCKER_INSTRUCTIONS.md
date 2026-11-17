@@ -293,7 +293,7 @@ curl http://localhost:8081/health
 # Expected: {"status":"ok"}
 
 # Query products:
-curl http://localhost:8081/products
+curl http://localhost:8081/catalog/products
 ```
 
 **5. Tear Down before testing next service:**
