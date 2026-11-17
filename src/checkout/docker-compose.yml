@@ -1,5 +1,8 @@
+name: e-commerce-checkout
+
 services:
   checkout:
+    image: ghcr.io/aroh-francis/retail-store-checkout:${APP_VERSION:-2.0.0}
     build:
       context: .
     hostname: checkout
