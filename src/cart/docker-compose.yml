@@ -1,5 +1,8 @@
+name: e-commerce-cart
+
 services:
   cart:
+    image: ghcr.io/aroh-francis/retail-store-cart:${APP_VERSION:-2.0.0}
     build:
       context: .
     hostname: carts

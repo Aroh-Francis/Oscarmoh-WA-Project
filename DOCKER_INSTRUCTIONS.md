@@ -154,6 +154,26 @@ docker images | grep retail-store
    ```
    *(Or if you have the GitHub CLI installed: `gh auth token | docker login ghcr.io -u <your-github-username> --password-stdin`)*
 
+
+
+#### Tag Your Local Image
+
+Rename your local image so Docker knows to route it to your GHCR account (all lowercase is mandatory):
+```bash
+docker tag retail-store-ui:100 ghcr.io/aroh-francis/retail-store-ui:100
+```
+
+
+Push the Image
+
+Upload the tagged image to GHCR:
+```bash
+docker push ghcr.io/aroh-francis/retail-store-ui:100
+```
+
+Once pushed, you can go to your GitHub profile → Packages → click retail-store-ui → Connect repository to link it directly to Oscarmoh-WA-Project and adjust its visibility (Public or Private).
+
+
 #### If using Docker Hub:
 ```bash
 docker login
